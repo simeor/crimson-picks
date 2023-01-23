@@ -1,6 +1,6 @@
 import ItemTile from "@/components/ItemTile";
 import axios from "axios";
-import { FetchedData } from "./Types";
+import { FetchedData } from "../Types";
 
 type HomeProps = {
   fetchedData: FetchedData;
