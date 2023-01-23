@@ -1,6 +1,20 @@
 import ItemTile from "@/components/ItemTile";
 import axios from "axios";
-import { FetchedData } from "../Types";
+
+export type FetchedData = {
+  data: TileData[];
+};
+
+export type TileData = {
+  type: string;
+  name: string;
+  author: string;
+  titleOne: string;
+  titleTwo: string;
+  titleThree: string;
+  titleFour: string;
+  link: string;
+};
 
 type HomeProps = {
   fetchedData: FetchedData;
