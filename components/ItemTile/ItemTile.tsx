@@ -1,8 +1,14 @@
 import React from "react";
 import ItemTileStyle from "./ItemTileStyle.module.css";
 import FadeIn from "react-fade-in";
+import { TileData } from "@/pages";
 
-const ItemTile = ({ data, index }) => {
+type ItemTileProps = {
+  data: TileData;
+  index: number;
+};
+
+const ItemTile = ({ data, index }: ItemTileProps) => {
   const {
     type = "",
     name = "",

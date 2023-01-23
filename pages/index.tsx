@@ -1,7 +1,7 @@
 import ItemTile from "@/components/ItemTile";
 import axios from "axios";
 
-export type FetchedData = {
+type FetchedData = {
   data: TileData[];
 };
 
